@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(6, 15, 34);
+}
+
+span{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: animate 6s linear ;
+}
+
+@keyframes animate {
+    0% { /* Start of the animation */
+        /*
+        - translate(-50%, -50%): Center the element horizontally and vertically
+        - rotate(0deg): No rotation at the beginning
+        */
+        transform: translate(-50%, -50%) rotate(0deg); 
+        opacity: 1;
+        /* Fully visible at the start */
+    }
+    100% {/* End of the animation */
+         /*
+        - translateX: Slightly shift to the right (200px) for natural falling effect
+        - translateY(5000%): Move far down off the screen to simulate falling
+        - rotate(360deg): Spin one full turn during the fall
+        */
+        transform: translate(calc(-50% + 200px), 5000%) rotate(360deg);
+        opacity: 0;
+        /* Fully transparent at the end (fade out) */
+    }
+}

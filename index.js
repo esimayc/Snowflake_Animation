@@ -1,6 +1,6 @@
 const body=document.querySelector("body")
 
-// Array of snowflake/star image URLs to be used for the effect
+// Array of snowflake image URLs to be used for the effect
 const Images = [
   "https://cdn3.iconfinder.com/data/icons/merry-flat-christmas/513/_11-1024.png",
   "https://cdn3.iconfinder.com/data/icons/christmas-new-year-2040/96/Icon_Snowflake-1024.png"
